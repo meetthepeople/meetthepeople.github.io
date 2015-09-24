@@ -8,3 +8,10 @@
 
 ---
 [what is meet the people?](https://github.com/meetthepeople/meetthepeople.github.io/issues/1)
+
+
+---
+
+{{ site.time }}
+
+{{ site.time | date: '%y' }}
