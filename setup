@@ -1,0 +1,40 @@
+#! /bin/bash
+
+# set up local development for meetthepeople
+
+echo "looking for ../entenhausen..."
+if [ -d "../entenhausen" ]
+then
+    echo "looks like ../entenhausen already exists"
+else
+    echo "looks like ../entenhausen doesn't exists, will clone that for you"
+    git clone git@github.com:meetthepeople/entenhausen.git ../entenhausen
+fi
+
+echo "checking for bundlr..."
+if ! gem list bundler -i
+then
+  echo "looks like bundler is not installed, will do that for you..."
+  gem install bundler
+else
+  echo "looks like bundler is installed"
+fi
+echo "will install all the gems now"
+bundle install
+cd ../entenhausen
+bundle install
+cd ../meetthepeople.github.io
+
+echo " "
+echo "----------------------------------------------------------"
+echo " "
+echo "you should be good to go now :)"
+echo " "
+echo "try"
+echo " "
+echo "foreman start"
+echo " "
+echo "and in a new terminal"
+echo " "
+echo "open http://127.0.0.1:4000"
+echo " "
