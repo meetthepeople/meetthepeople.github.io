@@ -1,4 +1,4 @@
-# meetthepeople.github.io
+# meetthepeople.in
 
 - https://twitter.com/meetthepeoplein
 
