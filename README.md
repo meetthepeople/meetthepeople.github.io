@@ -1,6 +1,8 @@
 # meetthepeople.in
 
-- https://twitter.com/meetthepeoplein
+Example: [meetthepeople.in/entenhausen](http://meetthepeople.in/entenhausen/)
+
+Twitter: [@meetthepeoplein](https://twitter.com/meetthepeoplein)
 
 ![image](https://cloud.githubusercontent.com/assets/170145/10145869/01c56358-6626-11e5-942d-584cdb55dcf2.png)
 
