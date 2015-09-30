@@ -5,3 +5,9 @@ body {
   font-family: Helvetica Neue, Helvetica, sans-serif;
 
 }
+
+.editLink {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-size: 0.8em;
+}
