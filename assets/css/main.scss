@@ -36,7 +36,6 @@ html {
 
 
 body {
-  /*background-color: lime;*/
   padding: 0em;
   margin: 0em;
   font-family: Helvetica Neue, Helvetica, sans-serif;
@@ -51,6 +50,7 @@ body {
     max-width: 33em;
   }
 }
+
 
 .header {
 
@@ -81,9 +81,25 @@ body {
     margin: 12% 0 0 0;
     /*display: inline-block;*/
   }
+  li {
+    width: 90%;
+  }
+  ul {
+    margin-top: 10em;
+  }
+
+
 
 }
 
+
+.event-entry {
+  display: block;
+  border-bottom: 1px solid white;
+  padding: 0.5em 0.5em;
+  min-height: 4em;
+  /*width: 100%;*/
+}
 
 .editLink, .deleteLink {
   opacity: 0;
@@ -97,7 +113,8 @@ body {
   display: inline-block;
   padding: 0.1em 0.7em;
   border-radius: 0.4em;
-  background-color: #ccc
+  background-color: #ccc;
+  color: #000;
 
 }
 
@@ -109,6 +126,7 @@ body {
   position: absolute;
   top: 1em;
   right: 1em;
+  color: #000;
 
   text-decoration: none;
   text-transform: uppercase;
@@ -123,4 +141,19 @@ body {
   /*font-size: 2em;*/
   position: relative;
   /*top: 0.1em;*/
+}
+
+
+
+
+
+
+ul {
+  list-style: none;
+  list-style-position: inside;
+}
+
+
+a {
+  text-decoration: none;
 }
