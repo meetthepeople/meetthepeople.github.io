@@ -1,0 +1,106 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$ContentZoom: 1.4;
+
+$FontMinimumLineWidth: 22em;
+// depends on typeface. see http://codepen.io/filtercake/full/MwNbGz/
+
+
+* {
+  box-sizing: border-box;
+}
+
+// default is 320px
+html {
+  font-size: 1em*0.9;
+}
+
+@media screen and (min-width: 370px) {
+  html {
+    // from 370px on we can revert the inital 0.9
+    font-size: 1em*1.1;
+    /*font-size: 1em*1.3;*/
+    /*font-size: $ContentZoom * 1em;*/
+  }
+}
+
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: $ContentZoom * 1em;
+  }
+}
+
+
+body {
+  /*background-color: lime;*/
+  padding: 0em;
+  margin: 0em;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+
+}
+
+
+.header, .content {
+  border: 1px dashed green;
+  padding: 0.5em;
+  * {
+    max-width: 33em;
+  }
+}
+
+.header {
+
+}
+
+.city-emblem {
+  width: 30%;
+  margin: 0 32%;
+  /*display: inline-block;*/
+}
+
+
+/* to split correctly, we two complete rows with min 22em each*/
+@media screen and (min-width: $ContentZoom * 44em) {
+
+  .header {
+    width: 49.6%;
+    float: left;
+    position: fixed;
+  }
+
+  .content {
+    width: 49.6%;
+    margin-left: 49.6%;
+  }
+  .city-emblem {
+    width: 100%;
+    margin: 32% 0;
+    /*display: inline-block;*/
+  }
+
+}
+
+
+.editLink, .deleteLink {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-size: 0.6em;
+}
+
+.editLink a, .deleteLink a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.1em 0.7em;
+  border-radius: 0.4em;
+  background-color: #ccc
+
+}
+
+.deleteLink a {
+  text-decoration: none;
+}
