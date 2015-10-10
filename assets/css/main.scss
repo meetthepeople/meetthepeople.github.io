@@ -60,6 +60,7 @@ body {
   width: 30%;
   margin: 0 32%;
   /*display: inline-block;*/
+  max-height: 300px;
 }
 
 
@@ -136,6 +137,22 @@ body {
   background-color: #ccc
 
 }
+
+.join-slack-button a {
+  position: absolute;
+  top: 4em;
+  right: 1em;
+  color: #000;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  border-radius: 0.4em;
+  background-color: #ccc
+
+}
+
 
 .plus {
   /*font-size: 2em;*/
