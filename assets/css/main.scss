@@ -2,9 +2,14 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+@import "_meyer-reset.scss";
+
+
+
+
+// FIXME: HOW DOES THE RESPONSIVE STUFF WORK?!
 
 $ContentZoom: 1.4;
-
 $FontMinimumLineWidth: 22em;
 // depends on typeface. see http://codepen.io/filtercake/full/MwNbGz/
 
@@ -35,11 +40,26 @@ html {
 }
 
 
-body {
-  padding: 0em;
-  margin: 0em;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+// ^ ^ ^ FIXME: HOW DOES THE RESPONSIVE STUFF WORK?!
 
+/* ***************
+
+TODO:
+
+- explain how exactly this weird "inside-out responsive with zoom" stuff wrks
+- move markup to classses
+- do basic spatial layout
+- generate classes from event array index to use with darkened color fan
+- generate darkened color fan to use with array index classes in markup
+
+
+*************** */
+
+
+
+
+body {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
 }
 
 
@@ -64,7 +84,7 @@ body {
 }
 
 
-/* to split correctly, we two complete rows with min 22em each*/
+/* to split correctly, we need two complete rows with min 22em each*/
 @media screen and (min-width: $ContentZoom * 44em) {
 
   .header {
