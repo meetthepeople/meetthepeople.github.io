@@ -1,2 +1,2 @@
 #! /bin/bash
-foreman start
+bundle exec foreman start
